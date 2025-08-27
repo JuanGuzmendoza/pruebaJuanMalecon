@@ -1,5 +1,1 @@
-# JuanGuzmanPruebaDesempe-oM3
-# JuanGuzmanPruebaDesempe-oM3
-# pruebaJuanMalecon
-# pruebaJuanMalecon
-# pruebaJuanMalecon
+Web-based system for managing crops, farms, technicians, and agricultural sensors. Includes a REST API and a frontend with full CRUD for each entity, bulk loading from CSV/Excel, and advanced queries. Developed with Node.js, Express, Sequelize, MySQL, and Bootstrap.
