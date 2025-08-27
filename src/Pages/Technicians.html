@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management of technicians</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+</head>
+<body class="container my-4">
+
+  <div id="navbar"></div>
+  <h1 class="mb-4">Management of technicians</h1>
+
+  <!-- Form -->
+  <form id="technician-form" class="mb-4">
+    <form id="technician-form" class="mb-4">
+  <input type="hidden" id="technician-id" name="technician_id">
+  
+  <div class="mb-3">
+    <label for="full_name" class="form-label">Name of Tech</label>
+    <input type="text" id="full_name" name="full_name" class="form-control" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Save</button>
+  <button type="button" id="cancel-edit" class="btn btn-secondary">Cancel</button>
+</form>
+
+  </form>
+
+  <!-- Table -->
+  <table class="table table-striped" id="technicians-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Technician</th>
+        <th>Accion</th>
+      </tr>
+    </thead>
+    <tbody>
+       <!-- Rows will be added dynamically here -->
+    </tbody>
+  </table>
+
+  <script type="module" src="../Js/Technicians.js"></script>
+</body>
+</html>

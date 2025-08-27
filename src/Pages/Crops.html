@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management of Crops</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="container my-4">
+
+  <div id="navbar"></div>
+  <h1 class="mb-4">Management of Crops</h1>
+
+  <!-- Formulario -->
+  <form id="crop-form" class="mb-4">
+    <input type="hidden" id="crop_id" name="crop_id">
+    <div class="mb-3">
+      <label for="type_crop" class="form-label">Type Crop</label>
+      <input type="text" id="type_crop" name="type_crop" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="type_soil" class="form-label">Type Soil</label>
+      <input type="text" id="type_soil" name="type_soil" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="fertilizer" class="form-label">Fertilizer</label>
+      <input type="text" id="fertilizer" name="fertilizer" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="it_organic" class="form-label">Is Organic?</label>
+      <select id="it_organic" name="it_organic" class="form-control" required>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="crop_variety" class="form-label">Crop Variety</label>
+      <input type="text" id="crop_variety" name="crop_variety" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="tons_produced" class="form-label">Tons Produced</label>
+      <input type="number" step="0.01" id="tons_produced" name="tons_produced" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label for="sensor_id" class="form-label">Sensor ID</label>
+       <select class="form-select" aria-label="Default select example" id="sensor_id" name="sensor_id" required>
+                <option value="">Select a category</option>
+              </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" id="cancel-edit" class="btn btn-secondary">Cancel</button>
+  </form>
+
+  <!-- Tabla  -->
+  <table class="table table-striped" id="crops-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type Crop</th>
+        <th>Type Soil</th>
+        <th>Fertilizer</th>
+        <th>Is Organic?</th>
+        <th>Crop Variety</th>
+        <th>Tons Produced</th>
+        <th>Sensor ID</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <!-- Rows will be added dynamically here -->
+    </tbody>
+  </table>
+
+  <script type="module" src="../Js/Crops.js"></script>
+</body>
+</html>

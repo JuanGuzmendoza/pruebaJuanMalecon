@@ -1,0 +1,24 @@
+{
+  "name": "juanguzman",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app/index.js",
+    "build": "node app/index.js",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.3",
+    "sequelize": "^6.37.7",
+    "xlsx": "^0.18.5  "
+  }
+}
